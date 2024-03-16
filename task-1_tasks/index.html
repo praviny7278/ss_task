@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header><h2>User Task</h2></header>
+    <form action="">
+      <label for="name">Full Name</label><br>
+      <input type="text" id="name" placeholder=""><br>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" placeholder=""><br>
+      <label for="t-name">Task name</label><br>
+      <input type="text" id="t-name" ><br>
+      <label for="priorities">Priorities</label>
+      <select id="priorities">
+        <option value="">select</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select><br>
+      <label for="deadline">Task Deadline: [Minutes]</label><br>
+      <input type="tel" id="deadline" placeholder=""><br>
+      <input type="submit" value="Add" id="submit-btn">
+    </form>
+    <div class="task-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Task</th>
+            <th>Priorities</th>
+            <th>Deadline</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!-- Append all data here -->
+      
+        </tbody>
+      </table>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
